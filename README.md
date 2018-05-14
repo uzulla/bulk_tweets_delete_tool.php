@@ -45,3 +45,18 @@ $ cat edited_list | php bulk_delete.php
 ```
 
 > The tool needs only id column.
+
+
+## `convert_archive_tweets_to_csv.php`
+
+> get [archive.zip](https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive). that contains whole your tweets.
+
+```
+# get and extract tweets archive.
+$ cd XXX
+$ cp tweets.csv /path/to/bulk_tweets_delete_tool
+$ php convert_archive_tweets_to_csv.php > list_converted
+$ # edit, grep, filter  list_converted
+$ php bulk_delete.php < list_filtered
+```
+
