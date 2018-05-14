@@ -3,3 +3,4 @@ composer.phar
 .php-version
 config.php
 list*
+tweets.csv
